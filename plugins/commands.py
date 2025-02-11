@@ -150,10 +150,10 @@ async def start(client, message):
             if info.media:
                 file_type = info.media
                 file = getattr(info, file_type.value)
-                f_caption = getattr(info, 'caption', '@Rebel_Backup')
+                f_caption = getattr(info, 'caption', '')
                 if f_caption:
                     f_caption = f_caption.html
-                old_title = getattr(file, "file_name", "Rebel_Backup")
+                old_title = getattr(file, "file_name", "")
                 title = formate_file_name(old_title)
                 size=get_size(int(file.file_size))
                 if BATCH_FILE_CAPTION:
