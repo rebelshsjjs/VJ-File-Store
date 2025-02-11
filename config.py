@@ -22,7 +22,7 @@ API_ID = int(environ.get("API_ID", "26162072"))
 API_HASH = environ.get("API_HASH", "ba25181c01b50d945748801b6c8b6ecc")
 BOT_TOKEN = environ.get("BOT_TOKEN", "8133006526:AAEYqbUfD-Uo6TEsp-Y2j-akuOmmxr1M0Uw")
 
-PICS = (environ.get('PICS', 'https://graph.org/file/ce1723991756e48c35aa1.jpg')).split() # Bot Start Picture
+PICS = (environ.get('PICS', 'https://envs.sh/Nt.jpg')).split() # Bot Start Picture
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '6717382350').split()]
 BOT_USERNAME = environ.get("BOT_USERNAME", "Rebels_FileStore_Bot") # without @
 PORT = environ.get("PORT", "8080")
