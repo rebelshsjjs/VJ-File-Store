@@ -150,7 +150,7 @@ async def start(client, message):
             if info.media:
                 file_type = info.media
                 file = getattr(info, file_type.value)
-                f_caption = getattr(info, 'caption', '')
+                f_caption = getattr(info, 'caption', '@Rebel_Backup')
                 if f_caption:
                     f_caption = f_caption.html
                 old_title = getattr(file, "file_name", "Rebel_Backup")
